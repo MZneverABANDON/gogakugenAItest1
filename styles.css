@@ -19,22 +19,6 @@ body, html {
     margin-bottom: 10px;
 }
 
-#time, #timerDisplay {
+#time {
     font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.timer button {
-    margin: 5px;
-    padding: 5px 15px;
-    font-size: 20px;
-    color: #fff;
-    background-color: #4855B6; /* 宇宙蓝 */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.timer button:hover {
-    background-color: #2c3d66; /* 深宇宙蓝 */
 }
