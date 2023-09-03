@@ -1,14 +1,14 @@
-function updateDateTime() {
-    const now = new Date();
-    const date = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-    const time = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
-
-    document.getElementById('date').textContent = date;
-    document.getElementById('time').textContent = time;
+// 日付と時刻の取得
+function getDate() {
+  const now = new Date();
+  return now.getFullYear() + "年" + (now.getMonth() + 1) + "月" + now.getDate();
 }
 
-// 初始化日期时间
-updateDateTime();
+function getTime() {
+  const now = new Date();
+  return now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+}
 
-// 每秒更新一次时间
-setInterval(updateDateTime, 1000);
+// 画面の表示
+document.querySelector(".date").innerHTML = getDate();
+document.querySelector(".time").innerHTML = getTime();
